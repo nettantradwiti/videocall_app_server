@@ -8,7 +8,7 @@ require("dotenv").config();
 
 const User = require("./models/user");
 var cors = require("cors");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const API_KEY = process.env.API_KEY;
 const PROJECT_SECRET = process.env.PROJECT_SECRET;
